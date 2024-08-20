@@ -1,2 +1,99 @@
 <!DOCTYPE html>
-<h1>現在システムメンテナンス中です。ご迷惑をお掛け致します。</h1>
+<html lang="ja">
+    <head>
+        <style>
+            img.header{
+                height: 300px;
+                display: flex;
+                margin: auto;
+                animation-name:fadeInAnime;
+                animation-duration:1s;
+                animation-fill-mode:forwards;
+                opacity:0;
+            }
+            a{
+                text-decoration: none;
+                text-align: center;
+                color: black;
+            }
+            h2{
+                background-color: darkgrey;
+                border-radius: 20px;
+            }
+            h1{
+                text-align: center;
+            }
+            div.about{
+                width: 100%;
+                animation-name:fadeUpAnime;
+                animation-duration:0.5s;
+                animation-fill-mode:forwards;
+                opacity:0;
+            }
+            div.text{
+                width: 70%;
+                margin: auto;
+                display: contents;
+                text-align: center;
+            }
+            @keyframes fadeInAnime{
+                from {
+                    opacity: 0;
+                    }
+
+                    to {
+                    opacity: 1;
+                }
+            }
+            div.game{
+                animation-name:fadeDownAnime;
+                animation-duration:0.5s;
+                animation-fill-mode:forwards;
+                opacity:0;
+            }
+            @keyframes fadeDownAnime{
+                from {
+                opacity: 0;
+	            transform: translateY(-100px);
+                }
+                to {
+                    opacity: 1;
+	                transform: translateY(0);
+                }
+            }
+            @keyframes fadeUpAnime{
+                from {
+                    opacity: 0;
+	                transform: translateY(100px);
+                }
+                to {
+                    opacity: 1;
+	                transform: translateY(0);
+                }
+        }
+        </style>
+        <meta charset="utf-8">
+        <title>虚空教伝説ホームページ</title>
+    </head>
+    <body>
+        <img class="header" src="ロゴ背景透過.png" alt="虚空教伝説">
+            <div class="game">
+                <div class="sitemap">
+                    <a class="play" href="game"><h2>ゲームをプレイ！(ブラウザ版)</h2></a>
+                </div>
+                <div class="device">
+                    <a href="game.zip"><h2>Windowsの方はこちら(推奨)</h2></a>
+                </div>
+            </div>
+        <div class="about">
+            <h1>ゲームの解説</h1>
+            <div class="text">
+                <p>虚空教の教祖こと、剣持刀也は、</p>
+                <p>突如、異世界へ来てしまった。</p>
+                <p>この世界で様々な出会いがあり、別れがあり、</p>
+                <p>そしてピーナッツ君から指輪のプレゼントもありました。</p>
+                <p>そんな剣持刀也は、現実世界に帰ることはできるのか!?</p>
+            </div>
+        </div>
+    </body>
+</html>
