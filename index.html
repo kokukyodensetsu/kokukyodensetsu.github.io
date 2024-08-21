@@ -2,6 +2,10 @@
 <html lang="ja">
     <head>
         <style>
+            img{
+                display: flex;
+                margin: auto;
+            }
             img.header{
                 height: 300px;
                 display: flex;
@@ -71,13 +75,29 @@
 	                transform: translateY(0);
                 }
         }
+        img.media{
+            border-radius: 10%;
+            width: 5%;
+            display: flex;
+            margin: auto;
+            float: inline-end;
+            margin: 5px;
+        }
+        div.bar{
+            margin: 0 auto;
+            animation-name:fadeUpAnime;
+            animation-duration:0.5s;
+            animation-fill-mode:forwards;
+            opacity:0;
+            background-color: lightgray;
+            height: 85px;
+        }
         </style>
         <meta charset="utf-8">
         <title>虚空教伝説ホームページ</title>
     </head>
     <body>
         <img class="header" src="ロゴ背景透過.png" alt="虚空教伝説">
-	    <h1>現在開発中です</h1>
             <div class="game">
                 <div class="sitemap">
                     <a class="play" href="game"><h2>ゲームをプレイ！(ブラウザ版)</h2></a>
@@ -95,6 +115,12 @@
                 <p>そしてピーナッツ君から指輪のプレゼントもありました。</p>
                 <p>そんな剣持刀也は、現実世界に帰ることはできるのか!?</p>
             </div>
+                <img class="slide" src="slide.gif" alt="スライドの画像">
+        </div>
+        <div class="bar">
+            <a href="https://x.com/kokukyo0822"><img class="media" src="img/X.jpg" alt="Xアカウント"></a>
+            <a href="https://discord.gg/A3pYA5nEFT"><img class="media" src="img/discord.png" alt="discord"></a>
+            <p>ⓒ剣持刀也/ANYCOROL</p>
         </div>
     </body>
 </html>
