@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
         <style>
+            @media screen and (max-width: 480px){
+
+            }
             img{
                 display: flex;
                 margin: auto;
@@ -15,7 +19,7 @@
                 animation-fill-mode:forwards;
                 opacity:0;
             }
-            a{
+            a.sitemap{
                 text-decoration: none;
                 text-align: center;
                 color: black;
@@ -92,6 +96,9 @@
             background-color: lightgray;
             height: 85px;
         }
+        p.red{
+            color: red;
+        }
         </style>
         <meta charset="utf-8">
         <title>虚空教伝説ホームページ</title>
@@ -100,10 +107,13 @@
         <img class="header" src="ロゴ背景透過.png" alt="虚空教伝説">
             <div class="game">
                 <div class="sitemap">
-                    <a class="play" href="game"><h2>ゲームをプレイ！(ブラウザ版)</h2></a>
+                    <a class="sitemap" href="game"><h2>ゲームをプレイ！(ブラウザ版)</h2></a>
                 </div>
-                <div class="device">
-                    <a href="game.zip"><h2>Windowsの方はこちら(推奨)</h2></a>
+                <div class="sitemap">
+                    <a class="sitemap" href="game.zip"><h2>Windowsの方はこちら(推奨)</h2></a>
+                </div>
+                <div class="sitemap">
+                    <a class="sitemap" href="app"><h2>スマホアプリ版</h2></a>
                 </div>
             </div>
         <div class="about">
@@ -117,10 +127,14 @@
             </div>
                 <img class="slide" src="slide.gif" alt="スライドの画像">
         </div>
+        <div class="update">
+            
+        </div>
         <div class="bar">
             <a href="https://x.com/kokukyo0822"><img class="media" src="img/X.jpg" alt="Xアカウント"></a>
             <a href="https://discord.gg/A3pYA5nEFT"><img class="media" src="img/discord.png" alt="discord"></a>
-            <p>ⓒ剣持刀也/ANYCOROL</p>
+            <p class="red">！注意！:こちらは、にじさんじ所属クリエイター、剣持刀也のファンメイドゲームです。<a href="https://www.anycolor.co.jp/guidelines/">ANYCOROL株式会社の二次創作ガイドライン</a> に準拠しております。</p>
+            
         </div>
     </body>
 </html>
