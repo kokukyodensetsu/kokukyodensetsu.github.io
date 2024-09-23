@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>剣持刀也非公式ホームページ</title>
+        <meta charset="utf-8">
+        <style>
+            html{
+                background-color: #000;
+                font-family: SimSun;
+                scroll-behavior: smooth;
+            }
+            h1{
+                color: white;
+            }
+            .pagetop {
+                height: 50px;
+                width: 50px;
+                position: fixed;
+                right: 30px;
+                bottom: 30px;
+                background: #fff;
+                border: solid 2px #000;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+            }
+            .pagetop__arrow {
+                height: 10px;
+                width: 10px;
+                border-top: 3px solid #000;
+                border-right: 3px solid #000;
+                transform: translateY(20%) rotate(-45deg);
+            }
+            @media (hover: hover) and (pointer: fine) {
+                .pagetop:hover, .pagetop:hover .pagetop__arrow {
+                    border-color: #3293e7;
+                }
+            }
+            p.sns{
+                background-color: #fff;
+                text-align: center;
+                font-size: 25px;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 100px;
+                color: #000;
+            }
+            p{
+                color: white;
+            }
+            a.sns{
+                text-decoration: none;
+                width: 70%;
+            }
+            h2{
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+            <h1 style="text-align: center;" class="top">>剣持刀也非公式ホームページ<</h1>
+        </header>
+        <!--剣持刀也の各種SNSリンク-->
+        <div class="sns" style="width: 70%; margin: 0 auto;">
+            <a class="sns" href="https://youtube.com/channel/UCv1fFr156jc65EMiLbaLImw"><p class="sns">YouTube</p></a>
+            <p class="sns-space" style="font-size: 3px;">　</p>
+            <a class="sns" href="https://x.com/rei_Toya_rei"><p class="sns">X</p></a>
+            <p class="sns-space" style="font-size: 3px;">　</p>
+            <a class="sns" href="sns"><p class="sns">Other Platforms</p></a>
+        </div>
+        <!--剣持刀也のXのポスト-->
+        <div style="float: left; width: 30%;" class="Post">
+            <h2 style="text-align: center;">ꘜKenmochi Toya Postꘜ</h2>
+            <a style="font-family: SimSun;" class="twitter-timeline" data-width="100%" data-height="700" data-theme="dark" href="https://twitter.com/rei_Toya_rei?ref_src=twsrc%5Etfw">Tweets by rei_Toya_rei</a> <script style="font-family: SimSun;" async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div style="float: right; width: 65%; margin: left 2%;" class="About">
+            <h2>Who is Kenmochi Toya</h2>
+            <p>剣持刀也とは</p>
+            <p>16歳の高校2年生。剣道部所属の隠れまじめ系男子。</p>
+            <p>普段は周りと合わせてじゃれているがダメな時はダメという。</p>
+            <p>以前から他の人の配信を見るのが好きで、その憧れから始めた。</p>
+            <p>練習のしすぎで怪我が絶えないので、常に救急セットを所持している。</p>
+            <a style="color: #fff;" href="https://nijisanji.jp/talents/l/toya-kenmochi">にじさんじ公式ページより</a>
+            <img style="width: 180px;" src="illust.webp" alt="画像が表示できませんでした。">
+        </div>
+        <p class="sns-space" style="font-size: 3px; clear: both;">　</p>
+        <footer style="clear: both; width: 100%; background-color: white;">
+            <p>　</p>
+            <a href="https://x.com/web_soft_ar2">制作者のX</a>
+            <p>　</p>
+        </footer>
+    </body>
+</html>
