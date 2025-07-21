@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+*{color: white; margin: 0; padding: 0; text-align: center; display: 0 auto; font-family: "Hina Mincho", sans-serif; font-weight: 500; font-style: normal;}
+h3{color: #000;}
+a{width: fit-content; display:inline-block; text-decoration: none; color: #000;}
+.logo{height: 50px; border-radius: 10px; box-shadow: 0px 0px 15px -5px #3f3f3f;}
+div.s_link{padding-left: 10px; padding-right: 10px; width: 50px; display:inline-block;}
+div.d_link{padding-left: 10px; padding-right: 10px; width: 65px; display:inline-block;}
+h2{color: #000;}
+a:hover{opacity: 0.5;}
+footer{background-color: #4d5557; color: white; border-top: 1px solid #000;}
+.top_logo{height: 80px;}
+h1{color: #000;}
+p{color: #000;}
+.PlayLink{background-color: #000; color: white; padding: 10px; margin: 5px;}
+.slide{width: 50vw; aspect-ratio: 4 / 3;}
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+    .slide{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+}
+@media screen and (max-width: 400px) {
+    /*細いスマホ用(400pxi以下)*/
+}
+@media (prefers-color-scheme: dark) {
+    p{color: white;}
+    h2{color: #fff;}
+    html{background-color: #292929;}
+    .logo{background-color: rgb(255, 255, 255);}
+    .top_logo{filter: invert(80%);}
+    h3{color: #ffffff;}
+    h1{color: white;}
+    .PlayLink{background-color: white; color: #000;}
+    input,textarea,button{color: #000; text-align: start;}
+}
+
+/*以下アニメーションのCSS*/
+body {animation: fadeIn 2s cubic-bezier(0.33, 1, 0.68, 1) forwards;}
+@keyframes fadeIn {0% {opacity: 0;}100% {opacity: 1;}}
